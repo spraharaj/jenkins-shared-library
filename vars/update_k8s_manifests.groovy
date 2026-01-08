@@ -48,7 +48,7 @@ def call(Map config = [:]) {
                 git add ${manifestsPath}/*.yaml
                 git commit -m "Update QBShop image tags to ${imageTag} and hostname to asriv.shop [ci skip]"
 
-                git remote set-url origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Satyams-git/Qualibytes-Ecommerce.git
+                git remote set-url origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/spraharaj/Qualibytes-Ecommerce.git
                 git push origin HEAD:\${GIT_BRANCH}
             fi
         """
